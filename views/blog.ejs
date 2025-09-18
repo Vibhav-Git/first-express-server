@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+
+<main class="overallBody" id="RUD"> 
+
+    
+    <h2><%= post.title %></h2>
+    <p><%= post.post %></p>
+
+    <div>
+        <form action="/blog/<%= post.postNum %>/update" method="POST">
+            <input type="submit" value="Update">
+        </form>
+        <form action="/blog/<%= post.postNum %>/delete" method="POST">
+            <input type="submit" value="Delete">
+        </form>
+    </div>
+
+</main>
+
+<%- include("partials/footer.ejs") %>

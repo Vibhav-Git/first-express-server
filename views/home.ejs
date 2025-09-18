@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs") %>
+
+<main class="overallBody">
+
+    <div id="createNote">
+        <a href="/create">+ Create Post</a>
+    </div>
+
+    <section class="history">
+        <p>your recently viewed posts show here</p>
+    </section>
+    
+    <section class="repo">
+
+        <% if(locals.availableposts.length > 0) { %>
+
+            <% availableposts.forEach(post => { %>
+                <% let newElement = `<a href="/blog/${post.postNum}"><div><h3>${post.title}</h3><p>${post.post}</p></div></a>`; %>
+                <%- newElement %>
+            <% }); %>
+            
+        <% } else { %>
+            <p>click on "+ Create Post" button to create a new post</p>
+        <% } %>
+    </section>
+
+</main>
+
+
+<%- include("partials/footer.ejs") %>
+    

@@ -1,0 +1,44 @@
+:root {
+    --colorBackground: #E9E9E9;
+    --colorHighlight: #FF8040;
+
+    --colorBase1: #0046FF;
+    --colorBase2: #001BB7;
+
+    --colorTextDark: #273F4F;
+    --colorTextLight: #FFFCFB;
+    --colorButton: #16A34A;
+    --colorButtonActive: #22C55E;
+}
+
+#about {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+#about h2 {
+    color: var(--colorHighlight);
+}
+
+#about h3 {
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+#about p {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+#about p span {
+    font-size: 4rem;
+    color: var(--colorHighlight);
+}

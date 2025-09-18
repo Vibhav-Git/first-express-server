@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+
+<main class="overallBody" id="contact">
+    
+    <h2>Contact form</h2>
+    <form action="/contact" method="POST">
+        <input type="text" id="usrName" placeholder="Please enter you name">
+        <textarea id="emailArea" placeholder="Enter details here ..."></textarea>
+        <input type="submit" value="send">
+    </form>
+</main>
+<%- include("partials/footer.ejs") %>

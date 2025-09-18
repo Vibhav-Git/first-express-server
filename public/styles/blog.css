@@ -1,0 +1,54 @@
+:root {
+    --colorBackground: #E9E9E9;
+    --colorHighlight: #FF8040;
+
+    --colorBase1: #0046FF;
+    --colorBase2: #001BB7;
+
+    --colorTextDark: #273F4F;
+    --colorTextLight: #FFFCFB;
+    --colorButton: #16A34A;
+    --colorButtonActive: #22C55E;
+}
+
+
+#RUD {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+#RUD > div {
+    align-self: flex-end;
+    margin-top: 3rem;
+
+    display: flex;
+    gap: 2rem;
+    
+    
+}
+
+#RUD > div input {
+    padding: 0.5rem 1rem;
+    border-radius: 10px; 
+    background-color: var(--colorTextDark);
+    color: var(--colorTextLight); 
+}
+
+#RUD > div input:hover {
+    background-color: var(--colorBase2);
+}
+
+#RUD > h2 {
+    font-size: 2.5rem;
+    color: var(--colorHighlight);
+    margin-top: 5rem;
+}
+
+#RUD > p {
+    font-size: 1rem;
+    color: var(--colorBase1);
+    margin-top: 2rem;
+}

@@ -1,0 +1,49 @@
+:root {
+    --colorBackground: #E9E9E9;
+    --colorHighlight: #FF8040;
+
+    --colorBase1: #0046FF;
+    --colorBase2: #001BB7;
+
+    --colorTextDark: #273F4F;
+    --colorTextLight: #FFFCFB;
+    --colorButton: #16A34A;
+    --colorButtonActive: #22C55E;
+}
+
+
+.createPost {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.createPost form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+}
+
+.createPost h2 {
+    color: var(--colorHighlight);
+    margin-top: 2rem;
+}
+
+#blogTitle {
+    width: 100%;
+}
+
+#blogPost {
+    height: 300px;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.createPost form input {
+    padding: 1rem 2rem;
+}

@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<main class="overallBody createPost">
+
+    <h2>Edit/Update</h2>
+    <form action="/blog/<%= post.postNum %>" method="POST">
+        <input type="text" id="blogTitle" name="blogTitle" value="<%= post.title %>"">
+        <textarea id="blogPost" name="blogPost"><%= post.post %></textarea>
+        <input type="submit" value="Make changes">
+
+    </form>
+
+</main>
+
+
+<%- include("partials/footer.ejs") %>
+    
